@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get 'static_pages/nannies'
   get 'static_pages/clientes'
   get 'static_pages/servicios'
-  root 'application#hello'
+  root 'static_pages#home'
 end
