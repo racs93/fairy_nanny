@@ -1,4 +1,7 @@
 class StaticPagesController < ApplicationController
+    def hasan 
+        raise ActionController::RoutingError.new('Not Found')
+    end
   def home
   end
 
