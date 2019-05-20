@@ -6,6 +6,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should not be found" do
+      assert_raises(ActionController::RoutingError) do 
+        get '/hasan'
+      end
+
+  end
+
   test "should get help" do
     get static_pages_help_url
     assert_response :success
