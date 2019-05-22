@@ -1,16 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  kids: 1
+invalid_kids:
+  kids: -1
   hours: 1.5
   place: 1
   is_language_necessary: false
   is_toy_necessary: false
   is_spact: false
 
-two:
+invalid_hours:
   kids: 1
-  hours: 1.5
+  hours: 0
   place: 1
   is_language_necessary: false
   is_toy_necessary: false
