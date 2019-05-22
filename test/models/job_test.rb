@@ -7,7 +7,7 @@ class JobTest < ActiveSupport::TestCase
   end
 
   test 'invalid kid' do
-    j = job.new(:hours => 1.5, :kids => 0, :place => 1, :is_language_necessary => false, :is_toy_necessary => false, :is_spact => false)
+    j = Job.new(:hours => 1.5, :kids => 0, :place => 1, :is_language_necessary => false, :is_toy_necessary => false, :is_spact => false)
   end
 
   # test "the truth" do
