@@ -7,7 +7,5 @@ class ActiveSupport::TestCase
   #fixtures :all
 
   # Add more helper methods to be used by all tests here...
-  silence_stream(STDOUT) do
-    load "#{Rails.root}/db/schema.rb"
-  end
+  load "#{Rails.root}/db/schema.rb"
 end
