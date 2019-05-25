@@ -9,4 +9,5 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
   load "#{Rails.root}/db/schema.rb"
+  ActiveRecord::Migration.maintain_test_schema!
 end
