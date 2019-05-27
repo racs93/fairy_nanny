@@ -6,9 +6,9 @@ class HomePageContentsTest < ApplicationSystemTestCase
   #
   #   assert_selector "h1", text: "HomePageContent"
   # end
-  test "should have a button for the addres on the footer" do
+  test "should show the email address somewhere on the page" do
       visit '/'
-      assert_selector :field, '.text', with: /Magnolias Chuburna, Merida, Yucatán, México/
+      assert page.has_content? 'social@fairynanny.mx'
   end
 
 end
