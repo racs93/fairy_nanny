@@ -11,4 +11,8 @@ class HomePageContentsTest < ApplicationSystemTestCase
       assert page.has_content? 'social@fairynanny.mx'
   end
 
+  test "should show the number somewhere on the page" do
+    visit '/'
+    assert page.has_content? '+52 1 999 956 8503'
+  end
 end
