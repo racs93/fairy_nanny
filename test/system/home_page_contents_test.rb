@@ -29,11 +29,25 @@ class HomePageContentsTest < ApplicationSystemTestCase
     assert  page.must_have_content "Fairy Nanny"
   end
 
+  test "home should have first banner information" do
+    visit '/'
+    assert page.must_have_content "Casas Particulares"
+    assert page.must_have_content "Kids Club "
+    assert page.must_have_content "Visiting Yucatan & Campeche"
+    assert page.must_have_content "Fairy World"
+  end
+
   test "home should said in the header 'Profesionales en el cuidado y entretenimiento infantil', 'FN' & 'FW'" do
     visit '/'
     assert page.must_have_content "Profesionales en el cuidado y entretenimiento infantil"
     assert page.must_have_content "Fairy Nanny"
     assert page.must_have_content "Fairy World"
+  end
+
+  test "home should have a banner with the experience and other data" do
+    visit '/'
+    page.execute_script "window.scrollBy(0,4000)"
+    assert page.must_have_content "Profesionales en el cuidado y entretenimiento infantil"
   end
 
   #historia secction
