@@ -15,4 +15,21 @@ class HomePageContentsTest < ApplicationSystemTestCase
     visit '/'
     assert page.has_content? '+52 1 999 956 8503'
   end
+
+  test "home should have saber mas button" do
+    visit '/'
+    assert click_link('Saber Más')
+  end
+
+  test "home should have Fairy Nanny button" do
+    visit '/'
+    assert  page.must_have_content "Fairy Nanny"
+  end
+
+  test "home should said in the header 'Profesionales en el cuidado y entretenimiento infantil', 'FN' & 'FW'" do
+    visit '/'
+    assert page.must_have_content "Profesionales en el cuidado y entretenimiento infantil"
+    assert page.must_have_content "Fairy Nanny"
+    assert page.must_have_content "Fairy World"
+  end
 end
