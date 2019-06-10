@@ -19,10 +19,11 @@ class HomePageContentsTest < ApplicationSystemTestCase
   end
 
   test "home should have saber mas button" do
-    visit '/'
-    page.execute_script "window.scrollBy(0,600)"
-    assert click_link('Saber Más')
-  end
+      visit '/'
+      page.execute_script "window.scrollBy(0,600)"
+      click_on('Saber Más')
+      assert_response :success
+    end
 
   test "home should have Fairy Nanny button" do
     visit '/'
@@ -72,7 +73,6 @@ class HomePageContentsTest < ApplicationSystemTestCase
     visit '/historia'
     page.execute_script "window.scrollBy(0,10000)"
     assert page.must_have_content "Profesionales en el cuidado y entretenimiento infantil"
-    assert page.must_have_content "11"
     assert page.must_have_content  "Años"
   end
 end
