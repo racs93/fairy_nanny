@@ -22,7 +22,7 @@ class HomePageContentsTest < ApplicationSystemTestCase
       visit '/'
       page.execute_script "window.scrollBy(0,600)"
       click_on('Saber Más')
-      assert_response :success
+      assert page.current_path.eql? '/historia'
     end
 
   test "home should have Fairy Nanny button" do
