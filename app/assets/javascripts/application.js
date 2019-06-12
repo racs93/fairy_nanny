@@ -11,6 +11,9 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
+//= require jquery_ujs
+//= require jquery.turbolinks
 //= require turbolinks
 <script src="//cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js" integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k=" crossorigin="anonymous"></script>
 <script src="js/jquery.min.js"></script>
