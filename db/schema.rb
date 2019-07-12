@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190522050658) do
+ActiveRecord::Schema.define(version: 20190522023913) do
 
   create_table "jobs", force: :cascade do |t|
-    t.integer "hours"
     t.integer "kids"
+    t.float "hours"
     t.integer "place"
     t.boolean "is_language_necessary"
     t.boolean "is_toy_necessary"

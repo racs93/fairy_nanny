@@ -1,3 +1,4 @@
+require 'rbconfig'
 source 'https://rubygems.org'
 
 gem 'rails',          '5.1.6'
