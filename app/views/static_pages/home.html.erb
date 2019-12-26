@@ -1,6 +1,693 @@
 
-<html>
-	<body>
-		<%= render 'layouts/index' %>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+    <title>Fairy Nanny</title>
+  </head>
+  <body>
+	<div>
+		<!-- Navigation large -->
+		<div class="container hidden-md-down">
+			<nav class="navbar navbar-expand-lg navbar-dark static-top hidden-md-down">
+				<div class="container hidden-md-down">
+					<a class="navbar-brand" href="#fnlogo">
+						<img class="logofn1" src="images/logofn1.png" alt="Logo Fairy Nanny">
+					</a>
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link " href="#quienessomos">Quienes Somos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#servicios">Servicios</a>
+						</li>
+						<li class="nav-item nav nav-tabs">
+							<a class="nav-link" href="#nannys">Nannies</a>
+						</li>
+						<li class="nav-item nav nav-tabs">
+							<a class="nav-link" href="#contacto">Contacto</a>
+						</li>
+					</ul>
+					<a class="navbar-brand" href="#fwlogo">
+						<img class="logofw1" src="images/logofw1.png" alt="Logo Fairy World">
+					</a>
+				</div>
+			</nav>
+		</div>
+
+		<!-- Navigation Small -->
+		<div class="container hidden-lg-up">
+			<div class="pos-f-t hidden-lg-up">
+				<div class="collapse hidden-lg-up" id="navbarToggleExternalContent">
+					<div class="navColor p-4 text-center">
+						<a class="text-white" href="#quienessomos">Quienes somos</a>
+					</div>
+					<div class="navColor p-4 text-center">
+						<a class="text-white"href="#servicios">Servicios</a>
+					</div>
+					<div class="navColor p-4 text-center">
+						<a class="text-white"href="#nannys">Nannies</a>
+					</div>
+					<div class="navColor p-4 text-center">
+						<a class="text-white"href="#contacto">Contacto</a>
+					</div>
+				</div>
+				<nav class="navColor navbar navbar-dark hidden-lg-up">
+					<h1 class="navPequeña">Fairy Nanny</h1>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</nav>
+			</div>
+		</div>
+
+		<div class="container">
+			<!--Carousel Wrapper-->
+			<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+				<!--Indicators-->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-2" data-slide-to="1"></li>
+					<!-- <li data-target="#carousel-example-2" data-slide-to="2"></li> -->
+				</ol>
+				<!--/.Indicators-->
+				<!--Slides-->
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="view">
+							<img class="d-block w-100" src="images/carrusel1.jpg"
+							alt="First slide">
+							<div class="mask rgba-black-light"></div>
+						</div>
+						<div class="carousel-caption">
+							<h3 class="h3-responsive"></h3>
+							<p></p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<!--Mask color-->
+						<div class="view">
+							<img class="d-block w-100" src="images/carrousel2.jpg"
+							alt="Second slide">
+							<div class="mask rgba-black-strong"></div>
+						</div>
+						<div class="carousel-caption">
+							<h3 class="h3-responsive"></h3>
+							<p></p>
+						</div>
+					</div>
+					<!-- <div class="carousel-item">
+						<div class="view">
+							<img class="d-block w-100" src=images/carrusel2.jpg"
+							alt="Third slide">
+							<div class="mask rgba-black-slight"></div>
+						</div>
+						<div class="carousel-caption">
+							<h3 class="h3-responsive"></h3>
+							<p></p>
+						</div>
+					</div> -->
+				</div>
+				<!--/.Slides-->
+				<!--Controls-->
+				<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+				<!--/.Controls-->
+			</div>
+			<!--/.Carousel Wrapper-->
+			<div class="row howweareblock" id="quienessomos">
+				<div class="col-sm-8">
+					<h1 class="text-center">Quiénes Somos</h1>
+					<p class="text-justify text-right text-secondary" >Hola! Soy <b>Marina Correa</b>. En 2007 cuando inicié la agencia tenía 19
+						años y un equipo con muchas ideas y vocación. La agencia inició gracias a un
+						Kinder en <span class="underline">Mérida</span> llamado <i>Alison Place</i> y
+						a <span class="underline">4</span> amigas que junto conmigo
+						<span class="underline">empezaríamos</span> un camino en el que
+						<span class="underline">muchas más emprenderían</span> esta bella aventura.<br>
+						<br>
+						El objetivo de la agencia siempre ha sido darles a los niños todo nuestro
+						cariño y <span class="underline">paciencia</span>, hacer todo lo posible para
+						que su infancia sea sana y divertida, creo fielmente que para un mundo mejor
+						debemos empezar con <span class="underline">nosotros</span>, debemos preservar
+						la inocencia en los niños y cuidar sus <span class="underline">valores</span>
+						y autoestima.<br>
+						<br>
+						Ahora que soy mamá de un niño y una niña es mi propósito seguir con esta tarea
+						y jamás rendirme, ya que todos los niños se lo merecen.</p>
+					</div>
+					<div class="col-sm-4">
+						<img class="roundedimg" src="images/quienesSomos.jpg" class="rounded-circle" alt="Cinque Terre">
+					</div>
+				</div>
+		</div>
+
+		<div class="container serviciosfn" id="servicios">
+			<div class="jumbotron">
+				<h1>Servicios</h1>
+				<p> Nuestra meta es satisfacer las necesidades de cuidado y entretenimiento de las familias más preocupadas por el bienestar de sus hijos, por eso ofrecemos una gran variedad de servicios para cada ocasión y cada presupuesto. Si deseas orientación, podemos sugerirte el adecuado a tus necesidades. Si quieres más información da click <a href="#">aquí!</a></p>
+			</div>
+			<div class="row justify-content-center" id="fnlogo">
+				<img src="images/logofn1.png" class=" col-md-6 align-self-center rounded mx-auto d-block" alt="...">
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="panel panel-default casasdiv">
+				<div class="panel-heading ">
+					<h1 class="panel-title text-center">Casas</h1>
+				</div>
+				<div class="panel-body text-center">
+					Los siguientes servicios son para personas que residen en Mérida, Yucatán y desean pasar el proceso de registro y seguridad para reservar cualquiera de los siguientes servicios.
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="tablaCasasParticulares modal bd-example-modal-xl fade" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/casaParticulares.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal bd-example-modal-xl fade serviciosFijos" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/servicioFijo.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".tablaCasasParticulares" src="images/casasCasasParticulares.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Casas Particulares.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv"  style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".serviciosFijos" src="images/cServiciosfijos.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Servicios Fijos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-xl fade servicioHostess" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" id="tamañoModal">
+				<div class="modal-content">
+					<div class="container-fluid">
+						<img src="images/hostesCasas.png" class="img-fluid" alt=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv"  style="width: 45rem;">
+						<a ><img class="card-img-top" data-toggle="modal" data-target=".servicioHostess" src="images/casaservicioshostess.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Servicio Hostess.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv"  style="width: 45rem;">
+						<a href="https://www.facebook.com/pg/www.fairynanny.com.mx/about/?ref=page_internal"><img class="card-img-top" src="images/casaRegistro.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Registro.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="panel panel-default visitaDiv">
+				<div class="panel-heading ">
+					<h1 class="panel-title text-center">Visita</h1>
+				</div>
+				<div class="panel-body text-center">
+					Los siguientes servicios son para personas que no residen en Mérida, Yucatán o no desean pasar el proceso de registro y seguridad para reservar cualquiera de los siguientes servicios.
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-xl fade hoteleshaciendas" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/hhaciendasVisita.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal bd-example-modal-xl fade hotelesHHBB" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/hostesDeVisita.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv"  style="width: 45rem;">
+						<a><img class="card-img-top servHotelesHac" data-toggle="modal" data-target=".hoteleshaciendas" src="images/vhoteleshaciendasetc.jpeg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Hoteles, Haciendas y demás sitios de hospedaje.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv"  style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".hotelesHHBB" src="images/vhostessparahoteles.jpg" alt="Card image cap"></a>
+						<div class="card-body"></a>
+							<p class="card-text">Hoteles Para HHBB.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-md fade talleresyActiv" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md" role="document" id="tamañoModal">
+					<div class="modal-content" id="yt-player">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ymZXPagDJMs"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal bd-example-modal-lg fade English" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/modalFiestaGreatWorld.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv"  style="width: 45rem;">
+						<a><img class="card-img-top video-btn embed-responsive-item" data-toggle="modal" data-target=".talleresyActiv" src="images/vTalleresyactividades.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Talleres y Actividades especiales.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv"  style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".English" src="images/visitaenglish.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">English.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="panel panel-default fiestaDiv">
+				<div class="panel-heading ">
+					<h1 class="panel-title text-center">De Fiesta</h1>
+				</div>
+				<div class="panel-body text-center">
+					Los siguientes servicios son para invitados a fiestas o anfitriones de ellas.
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-xl fade acompañmientoFiestas" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/acompañamientoFiestas.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal bd-example-modal-xl fade hostess" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/hostesInfantil.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".acompañmientoFiestas" src="images/defiestaAcompañamientoafiestas.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Acompañamiento a Fiestas.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".hostess" src="images/dvHostess.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Hostess.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-xl fade babyClub" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/babyClub.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal bd-example-modal-xl fade kidsClub" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/kidsclubeventos.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".babyClub" src="images/defiestaBabyClub.jpeg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Baby Club.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".kidsClub" src="images/defiestaKidsClub.png"  alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Kids Club.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-xl fade teensClub" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/teensClub.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".teensClub" src="images/defiestaTeensClub.jpeg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Teens Club.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".talleresyActiv" src="images/defiestaTalleresyActiv.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Talleres y Actividades Especiales.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container serviciosfw" id="fwlogo">
+			<div class="row justify-content-center">
+				<img src="images/logofw1.png"class="col-md-8 rounded mx-auto d-block" alt="...">
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-xl fade queEsFW" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/fWqueEsFW.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal bd-example-modal-lg fade tarifasAnuales" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/fwTarifas.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".queEsFW" src="images/queesfairyworld.jpeg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">¿Qué es Fairy World?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".tarifasAnuales" src="images/tarifasanuales.jpeg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Tarifas Anuales.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-xl fade consejoTecnico" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/fwConsejoTecnico.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal bd-example-modal-lg fade vacaciones" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/cursoDeVerano2.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".consejoTecnico" src="images/ctecnico.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Consejo Técnico.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".vacaciones" src="images/Paravacaciones.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Vacaciones.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal bd-example-modal-xl fade fiestaWorld" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/modalFiestaWorld.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal bd-example-modal-xl fade fiestaGreatWorld" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md" id="tamañoModal">
+					<div class="modal-content">
+						<div class="container-fluid">
+							<img src="images/modalFiestaGreatWorld.png" class="img-fluid" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container servicios1">
+			<div class="row">
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".fiestaWorld" src="images/fiestasWorld.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Fiesta World.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card colleftserv" style="width: 45rem;">
+						<a><img class="card-img-top" data-toggle="modal" data-target=".fiestaGreatWorld" src="images/fiestaGreatworld.jpg" alt="Card image cap"></a>
+						<div class="card-body">
+							<p class="card-text">Fiesta Great World.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<img src="images/lamina4.png" class="rounded nuestrosClientesimg" alt="Cinque Terre">
+		</div>
+
+
+		<div class="container">
+			<img src="images/lamina3.png" class="rounded nuestrasNanniesimg" id="nannys" alt="Cinque Terre">
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VvTD8GmIvto?autoplay=0"></iframe>
+					</div>
+
+				</div>
+				<div class="col-sm">
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HUgKeECE0LM?autoplay=0"></iframe>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FPhSN6xTbqM?autoplay=0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container footer" id="contacto">
+		<h1 class="text-center">Información de Contacto</h1>
+		<hr>
+			<div class="row">
+				<div class="col-sm-8">
+					<iframe src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=fairy%20world%2C%20merida+(kids%20club)&ie=UTF8&t=&z=16&iwloc=B&output=embed" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+				<div class="col-sm-4" id="contact2">
+					<h2>Contacto</h2>
+					<hr align="left" width="50%">
+					<h4 class="pt-2"><a href="https://www.facebook.com/www.fairynanny.com.mx/">Facebook</a></h4>
+					<i class="fas fa-globe" style="color:#000"></i> Nombre<br>
+					<i class="fas fa-phone" style="color:#000"></i> <a href="https://wa.me/5219999568503?text=Quisiera%20Información%20gracias"> Marina Correa </a><br>
+					<h4 class="pt-2">Horarios de Atención</h4>
+					<i class="fab fa-whatsapp" style="color:#000"></i><a>De 9 am a 7 pm.</a><br>
+					<h4 class="pt-2">Correo de Contacto</h4>
+					<i class="fa fa-envelope" style="color:#000"></i> <a href="mailto:direccion@fairynanny.mx">direccion@fairynanny.mx</a><br>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function(){
+			$('.dropdown-submenu a.test').on("click", function(e){
+				$(this).next('ul').toggle();
+				e.stopPropagation();
+				e.preventDefault();
+			});
+		});
+		</script>
+		<script>
+		$('#myModal').on('shown.bs.modal', function () {
+			$('#myInput').trigger('focus')
+		})
+		</script>
+		<script type="text/javascript">
+		$('.modal').on('hide.bs.modal', function() {
+			var memory = $(this).html();
+			$(this).html(memory);
+		});
+		</script>
+	</div>
+  </body>
 </html>
